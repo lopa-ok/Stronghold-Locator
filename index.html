@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Stronghold Locator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Minecraft Stronghold Locator</h1>
+        <form id="strongholdForm">
+            <div class="input-group">
+                <label for="x1">First Throw X Coordinate:</label>
+                <input type="number" id="x1" required>
+            </div>
+            <div class="input-group">
+                <label for="z1">First Throw Z Coordinate:</label>
+                <input type="number" id="z1" required>
+            </div>
+            <div class="input-group">
+                <label for="theta1">First Throw Angle (degrees):</label>
+                <input type="number" id="theta1" required>
+            </div>
+            <div class="input-group">
+                <label for="x2">Second Throw X Coordinate:</label>
+                <input type="number" id="x2" required>
+            </div>
+            <div class="input-group">
+                <label for="z2">Second Throw Z Coordinate:</label>
+                <input type="number" id="z2" required>
+            </div>
+            <div class="input-group">
+                <label for="theta2">Second Throw Angle (degrees):</label>
+                <input type="number" id="theta2" required>
+            </div>
+            <button type="button" onclick="calculateStronghold()">Calculate Stronghold Location</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
